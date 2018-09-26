@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Bosque;
+    src: url('../fonts/Bosque Encantado.ttf') format('truetype');
+}
+.content {
+    height: 100vh;
+    background: url('../images/plantWallpaper.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.header {
+    max-width: 1024px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.header h1 {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-family: Bosque, Arial, Helvetica, sans-serif;
+    color: greenyellow;
+}
+
+#message, #question {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.header button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: white;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: darkred;
+}
+
+.quiz-area {
+    max-width: 1024px;
+    height: calc(100vh - 275px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#answers {
+    width: 80%;
+    line-height: calc(50vh - 275px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#answers button {
+    width: 100%;
+    height: 75px;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+#answers button:hover {
+    background-color: yellowgreen;
+}
