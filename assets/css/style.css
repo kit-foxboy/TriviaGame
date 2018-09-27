@@ -11,7 +11,7 @@
 
 .header {
     max-width: 1024px;
-    height: 200px;
+    height: 25vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -25,7 +25,7 @@
     color: greenyellow;
 }
 
-#message, #question {
+#timer, #question {
     padding-top: 20px;
     text-align: center;
     font-size: 2rem;
@@ -52,7 +52,7 @@
 
 .quiz-area {
     max-width: 1024px;
-    height: calc(100vh - 275px);
+    height: calc(75vh - 20px);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -83,5 +83,5 @@
 }
 
 #answers button:hover {
-    background-color: yellowgreen;
+    background-color: white;
 }
