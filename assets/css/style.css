@@ -2,6 +2,10 @@
     font-family: Bosque;
     src: url('../fonts/Bosque Encantado.ttf') format('truetype');
 }
+audio {
+    display: none;
+}
+
 .content {
     height: 100vh;
     background: url('../images/plantWallpaper.jpg') no-repeat;
@@ -46,10 +50,6 @@
     cursor: pointer;
 }
 
-.header button:hover {
-    background-color: darkred;
-}
-
 .quiz-area {
     max-width: 1024px;
     height: calc(75vh - 20px);
@@ -57,6 +57,10 @@
     margin-right: auto;
     margin-top: 10px;
     background-color: rgba(0, 0, 0, .75);
+}
+
+#results {
+    display: none;
 }
 
 #answers {
@@ -84,4 +88,13 @@
 
 #answers button:hover {
     background-color: white;
+    color: gray;
+}
+
+.correct {
+    background-color: yellowgreen !important;
+}
+
+.incorrect {
+    background-color: darkred !important;
 }

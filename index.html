@@ -7,20 +7,27 @@
     <title>Carnivorous Plant Trivia</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <audio id="audio-correct" src="assets/audio/correct.wav" type="audio/wav"></audio>
+    <audio id="audio-incorrect" src="assets/audio/incorrect.wav" type="audio/wav"></audio>
     <div class="content">
         <div class="header">
             <h1>Carnivorous Plant Trivia</h1>
-            <h2 id="message">&nbsp</h2>
-            <button>Start</button>
+            <h2 id="timer">&nbsp</h2>
+            <button id="start">Start</button>
         </div>
         <div class="quiz-area">
             <h2 id="question">&nbsp</h2>
+            <div id="results">
+                <p>Correct Answers: <span id="correct-answers"></span></p>
+                <p>Incorrect Answers: <span id="incorrect-answers"></span></p>
+            </div>
             <div id="answers">
             </div>
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
 </html>
