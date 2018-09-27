@@ -27,6 +27,8 @@ var quiz = {
 
     startTimer: function() {
 
+        $('#timer').show();
+
         var time = 10;
         this.timer = setInterval(function() {
             $('#timer').text('Time Left: ' + time);
@@ -61,8 +63,8 @@ var quiz = {
             $('#timer').text('');
             $('#results').show();
             $('#question').text('Results');
-            $('#correct-answers').text(quiz.correctAnswers);
-            $('#incorrect-answers').text(quiz.incorrectAnswers);
+            $('#correct-answers p').text(quiz.correctAnswers);
+            $('#incorrect-answers p').text(quiz.incorrectAnswers);
         }
 
         var question = quiz.questions[quiz.questionIdx];

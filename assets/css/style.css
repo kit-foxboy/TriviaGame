@@ -24,12 +24,20 @@ audio {
 
 .header h1 {
     padding-top: 50px;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-family: Bosque, Arial, Helvetica, sans-serif;
     color: greenyellow;
 }
 
-#timer, #question {
+#timer {
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#question {
     padding-top: 20px;
     text-align: center;
     font-size: 2rem;
@@ -39,6 +47,7 @@ audio {
 .header button {
     width: 150px;
     height: 50px;
+    margin-top: 25px;
     border: none;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -61,6 +70,21 @@ audio {
 
 #results {
     display: none;
+}
+
+.result-stats {
+    width: 50%;
+    font-size: 10em;
+    float: left;
+    text-align: center;
+}
+
+#correct-answers i {
+    color: yellowgreen;
+}
+
+#incorrect-answers i {
+    color: darkred;
 }
 
 #answers {

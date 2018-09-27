@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carnivorous Plant Trivia</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -20,8 +21,14 @@
         <div class="quiz-area">
             <h2 id="question">&nbsp</h2>
             <div id="results">
-                <p>Correct Answers: <span id="correct-answers"></span></p>
-                <p>Incorrect Answers: <span id="incorrect-answers"></span></p>
+                <div id="correct-answers" class="result-stats">
+                    <i class="fas fa-check"></i>
+                    <p></p>
+                </div>
+                <div id="incorrect-answers" class="result-stats">
+                    <i class="fas fa-times"></i>
+                    <p></p>
+                </div>
             </div>
             <div id="answers">
             </div>
